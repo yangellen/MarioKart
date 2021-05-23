@@ -14,6 +14,7 @@ class ViewController: UIViewController {
       // Do any additional setup after loading the view.
    }
 
+   //move to different location
    @IBAction func onPanGesture(_ panGesture: UIPanGestureRecognizer) {
       let location = panGesture.location(in: view)
 
@@ -23,12 +24,12 @@ class ViewController: UIViewController {
       kartView.center = location
    }
 
+   //change different size
    @IBAction func onPinchGesture(_ pinchGesture: UIPinchGestureRecognizer) {
       let scale = pinchGesture.scale
-      print("scale: \(scale)")
+      //print("scale: \(scale)")
       let kartView = pinchGesture.view!
       kartView.transform = CGAffineTransform(scaleX: scale, y: scale)
-
    }
 }
 

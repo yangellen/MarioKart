@@ -28,16 +28,7 @@
                                     <outletCollection property="gestureRecognizers" destination="Phl-3B-U5i" appends="YES" id="k2I-vc-Z2q"/>
                                     <outletCollection property="gestureRecognizers" destination="D3U-QL-i6r" appends="YES" id="0hL-Y1-5A0"/>
                                     <outletCollection property="gestureRecognizers" destination="F7x-Yn-ihg" appends="YES" id="Zkc-kD-OcS"/>
-                                </connections>
-                            </imageView>
-                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="kart_1" translatesAutoresizingMaskIntoConstraints="NO" id="J8r-Rs-tRi">
-                                <rect key="frame" x="139" y="672" width="120" height="120"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <gestureRecognizers/>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="mEF-1i-HE5" appends="YES" id="7xM-R6-UHj"/>
-                                    <outletCollection property="gestureRecognizers" destination="Lnt-UB-fMp" appends="YES" id="xZg-Tf-M5w"/>
-                                    <outletCollection property="gestureRecognizers" destination="GTO-8C-FNK" appends="YES" id="zlr-cc-neg"/>
+                                    <outletCollection property="gestureRecognizers" destination="BjC-GR-oR4" appends="YES" id="E8Y-tm-rIM"/>
                                 </connections>
                             </imageView>
                             <imageView clipsSubviews="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="kart_2" translatesAutoresizingMaskIntoConstraints="NO" id="ulj-d5-TNz">
@@ -48,6 +39,18 @@
                                     <outletCollection property="gestureRecognizers" destination="I71-Wu-Zsq" appends="YES" id="Kdp-vN-XQE"/>
                                     <outletCollection property="gestureRecognizers" destination="QCF-kq-wCa" appends="YES" id="FOo-UF-dHv"/>
                                     <outletCollection property="gestureRecognizers" destination="Vwp-I3-zrT" appends="YES" id="7Ry-U0-dmc"/>
+                                    <outletCollection property="gestureRecognizers" destination="k78-LB-zwq" appends="YES" id="6EF-gX-uzQ"/>
+                                </connections>
+                            </imageView>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="kart_1" translatesAutoresizingMaskIntoConstraints="NO" id="J8r-Rs-tRi">
+                                <rect key="frame" x="128" y="672" width="120" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="mEF-1i-HE5" appends="YES" id="7xM-R6-UHj"/>
+                                    <outletCollection property="gestureRecognizers" destination="Lnt-UB-fMp" appends="YES" id="xZg-Tf-M5w"/>
+                                    <outletCollection property="gestureRecognizers" destination="GTO-8C-FNK" appends="YES" id="zlr-cc-neg"/>
+                                    <outletCollection property="gestureRecognizers" destination="YsE-qa-6jm" appends="YES" id="iru-vu-Djs"/>
                                 </connections>
                             </imageView>
                         </subviews>
@@ -101,6 +104,21 @@
                         <action selector="onRotationGesture:" destination="BYZ-38-t0r" id="SyT-qW-b2f"/>
                     </connections>
                 </rotationGestureRecognizer>
+                <tapGestureRecognizer numberOfTapsRequired="2" id="k78-LB-zwq">
+                    <connections>
+                        <action selector="didTapGesture:" destination="BYZ-38-t0r" id="WK8-QP-7FC"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer numberOfTapsRequired="2" id="YsE-qa-6jm">
+                    <connections>
+                        <action selector="didTapGesture:" destination="BYZ-38-t0r" id="gEg-xa-UgF"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer numberOfTapsRequired="2" id="BjC-GR-oR4">
+                    <connections>
+                        <action selector="didTapGesture:" destination="BYZ-38-t0r" id="xNx-cL-ETn"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="34.782608695652179" y="93.75"/>
         </scene>

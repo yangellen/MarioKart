@@ -35,11 +35,20 @@ class ViewController: UIViewController {
    //rotate kart
    @IBAction func onRotationGesture(_ rotationGesture: UIRotationGestureRecognizer) {
       let rotation = rotationGesture.rotation
-      print("rotation: \(rotation)")
+      //print("rotation: \(rotation)")
       let kartView = rotationGesture.view!
       kartView.transform = CGAffineTransform(rotationAngle: rotation)
-
    }
+   
+   //double tap a kart to make it race
+   @IBAction func didTapGesture(_ tapGesture: UITapGestureRecognizer) {
+      //print("Double tap recognized")
+      let karView = tapGesture.view!
 
+      UIView.animate(withDuration: 0.6) {
+         karView.center.x += 400
+         
+      }
+   }
 }
 

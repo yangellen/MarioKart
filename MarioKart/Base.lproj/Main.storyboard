@@ -27,6 +27,7 @@
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="Phl-3B-U5i" appends="YES" id="k2I-vc-Z2q"/>
                                     <outletCollection property="gestureRecognizers" destination="D3U-QL-i6r" appends="YES" id="0hL-Y1-5A0"/>
+                                    <outletCollection property="gestureRecognizers" destination="F7x-Yn-ihg" appends="YES" id="Zkc-kD-OcS"/>
                                 </connections>
                             </imageView>
                             <imageView clipsSubviews="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="kart_1" translatesAutoresizingMaskIntoConstraints="NO" id="J8r-Rs-tRi">
@@ -36,6 +37,7 @@
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="mEF-1i-HE5" appends="YES" id="7xM-R6-UHj"/>
                                     <outletCollection property="gestureRecognizers" destination="Lnt-UB-fMp" appends="YES" id="xZg-Tf-M5w"/>
+                                    <outletCollection property="gestureRecognizers" destination="GTO-8C-FNK" appends="YES" id="zlr-cc-neg"/>
                                 </connections>
                             </imageView>
                             <imageView clipsSubviews="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="kart_2" translatesAutoresizingMaskIntoConstraints="NO" id="ulj-d5-TNz">
@@ -45,6 +47,7 @@
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="I71-Wu-Zsq" appends="YES" id="Kdp-vN-XQE"/>
                                     <outletCollection property="gestureRecognizers" destination="QCF-kq-wCa" appends="YES" id="FOo-UF-dHv"/>
+                                    <outletCollection property="gestureRecognizers" destination="Vwp-I3-zrT" appends="YES" id="7Ry-U0-dmc"/>
                                 </connections>
                             </imageView>
                         </subviews>
@@ -83,6 +86,21 @@
                         <action selector="onPinchGesture:" destination="BYZ-38-t0r" id="Lhp-t7-wj3"/>
                     </connections>
                 </pinchGestureRecognizer>
+                <rotationGestureRecognizer id="Vwp-I3-zrT">
+                    <connections>
+                        <action selector="onRotationGesture:" destination="BYZ-38-t0r" id="QwL-cM-aI6"/>
+                    </connections>
+                </rotationGestureRecognizer>
+                <rotationGestureRecognizer id="GTO-8C-FNK">
+                    <connections>
+                        <action selector="onRotationGesture:" destination="BYZ-38-t0r" id="HE8-ZN-oIS"/>
+                    </connections>
+                </rotationGestureRecognizer>
+                <rotationGestureRecognizer id="F7x-Yn-ihg">
+                    <connections>
+                        <action selector="onRotationGesture:" destination="BYZ-38-t0r" id="SyT-qW-b2f"/>
+                    </connections>
+                </rotationGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="34.782608695652179" y="93.75"/>
         </scene>

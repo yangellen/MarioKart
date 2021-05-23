@@ -9,9 +9,21 @@ import UIKit
 
 class ViewController: UIViewController {
 
+   @IBOutlet weak var kartView0: UIImageView!
+   @IBOutlet weak var kartView1: UIImageView!
+   @IBOutlet weak var kartView2: UIImageView!
+
+   var startingPointKartView0 = CGPoint()
+   var startingPointKartView1 = CGPoint()
+   var startingPointKartView2 = CGPoint()
+
    override func viewDidLoad() {
       super.viewDidLoad()
       // Do any additional setup after loading the view.
+      startingPointKartView0 = kartView0.center
+      startingPointKartView1 = kartView1.center
+      startingPointKartView2 = kartView2.center
+      
    }
 
    //move kart to different location
@@ -47,8 +59,23 @@ class ViewController: UIViewController {
 
       UIView.animate(withDuration: 0.6) {
          karView.center.x += 400
-         
       }
    }
+
+   //user can long press the background to reset the karts
+   @IBAction func onLongPress(_ sender: UILongPressGestureRecognizer) {
+
+      UIView.animate(withDuration: 0.8) {
+         self.kartView0.center = self.startingPointKartView0
+         self.kartView1.center = self.startingPointKartView1
+         self.kartView2.center = self.startingPointKartView2
+
+         self.kartView0.transform = CGAffineTransform.identity
+         self.kartView1.transform = CGAffineTransform.identity
+         self.kartView2.transform = CGAffineTransform.identity
+
+      }
+   }
+
 }
 

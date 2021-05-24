@@ -12,5 +12,5 @@ MarioKart is an app that allows users to
 - [x] User can long press the background to reset the karts
 
 ### App Walkthrough GIF
-<img src="" width=250><br>
+<img src="http://g.recordit.co/VquikaqU45.gif" width=250><br>
 
